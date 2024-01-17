@@ -1,8 +1,7 @@
-runtime: python312
-env: standard
+runtime: custom
+env: flex
 
-automatic_scaling:
-  min_instances: 1
-  max_instances: 1
-  min_idle_instances: 1
-  max_idle_instances: 1
+manual_scaling:
+  instances: 1
+resources:
+  cpu: 1
